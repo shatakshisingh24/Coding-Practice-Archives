@@ -4,3 +4,4 @@
 
 Day-1 
 * Leap number or not (Easy)
+* Reverse the given number (Easy)
