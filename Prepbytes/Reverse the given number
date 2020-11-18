@@ -1,0 +1,58 @@
+#Problem
+
+PrepBuddy gave you a number 
+X
+ and asks you to reverse that number and print it.
+
+Input format
+One integer is provided denoting the value of 
+X
+.
+Note - The given number doesn't have leading or ending zero's.
+
+Output format
+Print the reverse of 
+X
+.
+
+Constraints
+1
+<=
+X
+<=
+10
+6
+
+Time Limit
+1
+ ​secon
+
+Example
+Input
+102345
+
+Output
+543201
+
+
+
+
+Solution:
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+  int num,t,rev=0;
+  cin>>num;
+  
+  while(num>0)
+  {
+    t=num%10;
+    rev=rev*10 + t;
+    num=num/10;
+    
+  }
+  cout<<rev;
+  return 0;
+}
