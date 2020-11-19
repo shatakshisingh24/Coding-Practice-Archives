@@ -12,3 +12,4 @@ FUNDAMENTALS
 * PATTERN3 (Easy)
 * MAXDRAWS (Easy)
 * Perfect Number and Divisors (Easy)
+* Clock and Angles (Easy)
