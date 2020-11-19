@@ -1,0 +1,42 @@
+problem:- https://mycode.prepbytes.com/problems/fundamentals/PATTERN3
+
+SOLUTION:
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+  //write your code here
+  char ch;
+  cin>>ch;
+  int i,j,k;
+  
+  for(i=1;i<=5;i++)
+  {
+    for(k=1;k<=5;k++)
+    {
+      if(k<=i)
+      {
+        cout<<k;
+      }
+      else
+      {
+        cout<<"  ";
+      }
+    }
+    for(k=5;k<10;k++)
+    {
+      if(10-k<=i)
+      {
+        cout<<10-k;
+      }
+      else
+      {
+        cout<<"  ";
+      }
+    }
+    cout<<'\n';
+  }
+  
+  return 0;
+}
