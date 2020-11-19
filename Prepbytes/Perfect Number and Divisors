@@ -1,0 +1,39 @@
+PROBLEM: https://mycode.prepbytes.com/problems/fundamentals/PRFCTNO
+
+SOLUTION: 
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+  //write your code here
+  int test,num;
+  cin>>test;
+  
+  for(int i=0;i<test;i++)
+  {
+    int sum=0;
+    cin>>num;
+    
+    for(int j=1;j<num;j++)
+    {
+      if(num%j==0)
+      {
+        sum=sum+j;
+      }
+    }
+    
+    if(sum==num)
+    {
+      cout<<"true\n";
+    }
+    else
+    {
+      cout<<"false\n";
+    }
+  }
+  
+  return 0;
+}
+
