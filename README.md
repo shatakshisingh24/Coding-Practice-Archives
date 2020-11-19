@@ -7,3 +7,4 @@ Day-1
 * Reverse the given number (Easy)
 * Boxes and Toys (Easy)
 * PATTERN3 (Easy)
+* MAXDRAWS (Easy)
