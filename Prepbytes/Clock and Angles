@@ -1,0 +1,28 @@
+PROBLEM: https://mycode.prepbytes.com/problems/fundamentals/CLCKANGLE
+
+SOLUTION:
+
+#include <bits/stdc++.h>
+using namespace std;
+int min(int x, int y) { return (x < y)? x: y; }
+
+int main()
+{
+  //write your code here
+  int test;
+  cin>>test;
+  
+  for(int i=0; i<test; i++)
+  {
+    int h,m;
+    cin>>h>>m;
+    
+    int res;
+    res= abs(0.5*(h*60 + m)- (m*6));
+    
+   
+    cout<<min(res, 360-res)<<endl;
+  }
+  
+  return 0;
+}
