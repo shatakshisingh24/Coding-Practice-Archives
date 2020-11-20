@@ -1,0 +1,33 @@
+PROBLEM: https://mycode.prepbytes.com/problems/fundamentals/PATTERN4
+
+SOLUTION:
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+  //write your code here
+  int n;
+  cin>>n;
+  
+  for(int i=1;i<=5;i++)
+  {
+    for(int j=0;j<5-i;j++)
+    {
+      cout<<" "<<" ";
+    }
+    
+    for(int k=i;k<=2*i-1;k++)
+    {
+      cout<<k<<" ";
+    }
+    
+    for(int m=2*i-2; m>=i; m--)
+    {
+      cout<<m<<" ";
+    }
+    cout<<endl;
+  }
+  
+  return 0;
+}
