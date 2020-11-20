@@ -13,3 +13,10 @@ FUNDAMENTALS
 * MAXDRAWS (Easy)
 * Perfect Number and Divisors (Easy)
 * Clock and Angles (Easy)
+
+Day-1 
+
+FUNDAMENTALS
+
+* Sorcerer Sequence (Easy)
+* Table Chair (Easy) https://mycode.prepbytes.com/problems/fundamentals/TABLECHAIR
