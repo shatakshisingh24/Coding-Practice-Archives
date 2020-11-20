@@ -18,5 +18,7 @@ Day-1
 
 FUNDAMENTALS
 
-* Sorcerer Sequence (Easy)
+* Sorcerer Sequence (Easy)  https://mycode.prepbytes.com/problems/fundamentals/JUGGLER
 * Table Chair (Easy) https://mycode.prepbytes.com/problems/fundamentals/TABLECHAIR
+* Dragon Visit (Easy) https://mycode.prepbytes.com/problems/fundamentals/DRAYE
+* Pyramid Pattern (Easy) https://mycode.prepbytes.com/problems/fundamentals/PATTERN4
