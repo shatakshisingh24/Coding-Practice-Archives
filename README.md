@@ -1,4 +1,4 @@
-# Coding-Practice-Solutions
+# Coding-Practice-Archives
 
 44 Days of Code
 
@@ -14,7 +14,7 @@ FUNDAMENTALS
 * Perfect Number and Divisors (Easy)
 * Clock and Angles (Easy)
 
-Day-1 
+Day-2
 
 FUNDAMENTALS
 
