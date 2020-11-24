@@ -22,3 +22,7 @@ FUNDAMENTALS
 * Table Chair (Easy) https://mycode.prepbytes.com/problems/fundamentals/TABLECHAIR
 * Dragon Visit (Easy) https://mycode.prepbytes.com/problems/fundamentals/DRAYE
 * Pyramid Pattern (Easy) https://mycode.prepbytes.com/problems/fundamentals/PATTERN4
+
+Day-3
+
+* Simple Input https://hack.codingblocks.com/app/practice/3/206
