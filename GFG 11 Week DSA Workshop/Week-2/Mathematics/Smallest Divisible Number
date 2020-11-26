@@ -1,0 +1,25 @@
+PROBLEM: 
+https://practice.geeksforgeeks.org/problems/smallest-divisible-number/1/?track=dsa-workshop-1-mathematics&batchId=308#
+Given a number N, find an integer denoting the smallest number evenly divisible by each number from 1 to n.
+
+Example 1:
+Input:
+N = 3
+Output: 6
+Explanation: 6 is the smallest number 
+divisible by 1,2,3.
+-----------------------------------------------------------------------------
+
+class Solution{
+public:
+    long long getSmallestDivNum(long long n)
+    {
+        // code here
+         long long int mul=1;
+        for(long long int i=1;i<=n;i++)
+        {
+            mul=mul*i/ gcd(mul,i);
+        }
+        return mul;
+        
+    }
