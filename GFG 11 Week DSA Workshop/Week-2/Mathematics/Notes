@@ -1,0 +1,160 @@
+1. Finding NUmber of Digits ina number: K = floor(log10(N) + 1), where N is the number and kis the number of digits.
+
+2. Arithmatic and Geometric Progression
+
+General Formulas to solve problems related to Arithmetic Progressions: If ‘a’ is the first term and ‘d’ is the common difference:
+>nth term of an AP = a + (n-1)*d.
+>Arithmetic Mean = Sum of all terms in the AP / Number of terms in the AP.
+>Sum of ‘n’ terms of an AP = 0.5 n (first term + last term) = 0.5 n [ 2a + (n-1) d ].
+
+If ‘a’ is the first term and ‘r’ is the common ratio:
+>nth term of a GP = a*rn-1.
+>Geometric Mean = nth root of product of n terms in the GP.
+>Sum of ‘n’ terms of a GP (r < 1) = [a (1 – rn)] / [1 – r].
+>Sum of ‘n’ terms of a GP (r > 1) = [a (rn – 1)] / [r – 1].
+>Sum of infinite terms of a GP (r < 1) = (a) / (1 – r).
+
+3. Quadratic Equations:
+
+A quadratic equation is a second-order polynomial equation of a variable say x. The general form of a quadratic equation is given as:
+a*x2 + b*x + c = 0, Where a,b and c are real known values and,a can't be zero.
+
+roots = (-b ± √(b2 - 4ac))/2a
+
+> If b2 < 4ac, then roots are complex
+(not real).
+> If b2 = 4ac, then roots are real 
+and both roots are same.
+>If b2 > 4ac, then roots are real 
+and different.
+
+
+4. Mean
+Mean is defined as average of a given set of data.
+
+Facts about Mean :
+>The mean (or average) is the most popular and well known measure of central tendency.
+>It can be used with both discrete and continuous data, although its use is most often with continuous data.
+>There are other types of means. Geometric mean, Harmonic mean and Arithmetic mean.
+>Mean is the only measure of central tendency where the sum of the deviations of each value from the mean is always zero.
+
+
+5. Median
+Median is the middle value of a set of data. To determine the median value in a sequence of numbers, the numbers must first be arranged in an ascending order.
+
+Facts about Median :
+Median is an important measure (compared to mean) for distorted data, because median is not so easily distorted. For example, median of {1, 2, 2, 5, 100) is 2 and mean is 22.
+If the user adds a constant to every value, the mean and median increases by the same constant.
+If the user multiplies every value by a constant, the mean and the median will also be multiplied by that constant.
+
+
+6. Prime Numbers
+A prime number is a whole number greater than 1, which is only divisible by 1 and itself. First few prime numbers are : 2 3 5 7 11 13 17 19 23 ........
+
+Sieve of Eratosthenes--------Using Sieve of Eratosthenes is the most efficient way of generating prime numbers upto a given number N.
+
+Following is the algorithm to find all the prime numbers less than or equal to a given integer n by Eratosthenes' method:
+Create a list of consecutive integers from 2 to n: (2, 3, 4, ..., n).
+Initially, let p equal 2, the first prime number.
+Starting from p2, count up in increments of p and mark each of these numbers greater than or equal to p2 itself in the list. These numbers will be p(p+1), p(p+2), p(p+3), etc..
+Find the first number greater than p in the list that is not marked. If there was no such number, stop. Otherwise, let p now equal this number (which is the next prime), and repeat from step 3.
+
+
+7.
+Factors and Multiples : All numbers that divide a number completely, i.e., without leaving any remainder, are called factors of that number. For example, 24 is completely divisible by 1, 2, 3, 4, 6, 8, 12, 24. Each of these numbers is called a factor of 24 and 24 is called a multiple of each of these numbers.
+
+LCM : LCM stands for Least Common Multiple. The lowest number which is exactly divisible by each of the given numbers is called the least common multiple of those numbers. For example, consider the numbers 3, 31 and 62 (2 x 31). The LCM of these numbers would be 2 x 3 x 31 = 186.
+
+To find the LCM of the given numbers, express each number as their prime factorization. The product of highest power of the prime numbers that appear in the prime factorization of any of the numbers gives us the LCM.
+For example, consider the numbers 2, 3, 4 (2 x 2), 5, 6 (2 x 3). The LCM of these numbers is 2 x 2 x 3 x 5 = 60. The highest power of 2 comes from prime factorization of 4, the highest power of 3 comes from prime factorization of 3 and prime factorization of 6 and the highest power of 5 comes from prime factorization of 5.
+
+HCF : The term HCF stands for Highest Common Factor. The largest number that divides two or more numbers is the highest common factor (HCF) for those numbers. For example, consider the numbers 30 (2 x 3 x 5), 36 (2 x 2 x 3 x 3), 42 (2 x 3 x 7), 45 (3 x 3 x 5). 3 is the largest number that divides each of these numbers, and hence, is the HCF for these numbers.
+
+HCF is also known as Greatest Common Divisor (GCD).
+To find the HCF of two or more numbers, express each number as their prime factorization. The product of the minimum powers of common prime terms in both of the prime factorization gives the HCF. This is the method we illustrated in the above step.
+
+Also, for finding the HCF of two numbers, we can also proceed by long division method. We divide the larger number by the smaller number (divisor). Now, we divide the divisor by the remainder obtained in the previous stage. We repeat the same procedure until we get zero as the remainder. At that stage, the last divisor would be the required HCF.
+
+
+
+
+
+Basic Euclidean Algorithm for HCF
+The Euclidean algorithm is based on the below facts:
+If we subtract the smaller number from larger (we reduce larger number), GCD doesn't change. So if we keep subtracting repeatedly the larger of two, we end up with GCD.
+Now instead of subtraction, if we divide the smaller number, the algorithm stops when the remainder is found to be 0.
+
+Below is the recursive function for finding GCD using Euclidean Algorithm:
+gcd(a, b)
+{
+    if (a == 0)
+        return b;
+
+    return gcd(b % a, a);
+}
+
+Time Complexity: O(log(min(a, b)))
+
+
+
+Important properties of LCM and HCF:
+For two numbers say, 'a' and 'b', LCM x HCF = a x b.
+HCF of co-primes = 1.
+For two fractions,
+HCF = HCF (Numerators) / LCM (Denominators)
+LCM = LCM (Numerators) / HCF (Denominators)
+
+
+
+8. Factorial
+
+0!=1
+
+Trailing 0s in N! = Count of 5s in prime factors of n!
+                  = floor(n/5) + floor(n/25) + floor(n/125) + ....
+                  
+                  
+9. Permutation
+
+Permutation is the different arrangements of a given number of elements taken one by one, or some, or all at a time. For example, if we have two elements A and B, then there are two possible arrangements, AB and BA.
+
+Number of permutations when 'r' elements are arranged out of a total of 'n' elements is n Pr = n! / (n - r)!. For example, let n = 4 (A, B, C and D) and r = 2 (All permutations of size 2). The answer is 4!/(4-2)! = 12. The twelve permutations are AB, AC, AD, BA, BC, BD, CA, CB, CD, DA, DB and DC.
+
+Important Properties of Permutation:
+n P n = n*(n-1)*(n-2)*......*1 = n!.
+n P 0 = n! / n! = 1.
+n P 1 = n.
+n P n-1 = n!.
+n P r/n P r-1 = n - r + 1.
+
+Permutation with repetition allowed: The number of permutation or arrangements of N numbers with repetition allowed will be NN. For Example, permutaions of {1,2} with repetitions will be {{1,1}, {1,2}, {2,1},{2,2}}.
+
+Permutation with duplicates: The number of permutations or arrangements of N objects of which p1 are of one kind, p2 are of second kind, ..., pk are of k-th kind and the rest if any, are of different kinds is: N! / (p1! * p2! *....*pk!).
+
+
+
+10. Combinaton
+
+Combination is the different selections of a given number of elements taken one by one, or some, or all at a time. For example, if we have two elements A and B, then there is only one way to 00select two items, we select both of them.
+
+Number of combinations when 'r' elements are selected out of a total of 'n' elements is n C r = n! / [ (r !) * (n - r)! ]. For example, let n = 4 (A, B, C and D) and r = 2 (All combinations of size 2). The answer is 4!/((4-2)!*2!) = 6. The six combinations are AB, AC, AD, BC, BD, CD.
+
+Important Properties of Combination:
+n C 0 = n C n = 1.
+n C r = n C n-r.
+n C r + n C r-1 = n+1 C r.
+n * n-1 C r-1 = (n - r + 1)* n C r-1.
+
+
+
+11. Modular Arithmatic
+
+Let us take a look at some of the basic rules and properties that can be applied in Modular Arithmetic(Addition, Subtraction, Multiplication etc.). Consider numbers a and b operated under modulo M.
+(a + b) mod M = ((a mod M) + (b mod M)) mod M.
+(a - b) mod M = ((a mod M) - (b mod M)) mod M.
+(a * b) mod M = ((a mod M) * (b mod M)) mod M.
+
+The above three expressions are valid and can be performed as stated. But when it comes to modular division, there are some limitations.
+
+
+
