@@ -26,3 +26,6 @@ FUNDAMENTALS
 Day-3
 
 * Simple Input https://hack.codingblocks.com/app/practice/3/206
+
+Day-4
+*
