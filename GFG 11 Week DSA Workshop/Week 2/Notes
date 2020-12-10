@@ -1,1 +1,108 @@
+Arrays:
+
+
+>An array is a collection of items of the same data type stored at contiguous memory locations.
+>This makes it easier to calculate the position of each element by simply adding an offset to a base value, i.e.,
+  the memory location of the first element of the array (generally denoted by the name of the array).
+
+> Remember: “Location of the next index depends on the data type that we use”.
+
+Defining an Array:-----------------------------------------------------------------------------------------------------------------------
+Array definition is similar to defining any other variable.
+There are two things that are needed to be kept in mind, the data type of the array elements and the size of the array.
+The size of the array is fixed and the memory for an array needs to be allocated before use, the size of an array cannot be increased or decreased dynamically.
+
+Accessing array elements:-----------------------------------------------------------------------------------------------------------------
+Arrays allows to access elements randomly. Elements in an array can be accessed using indexes. Suppose an array named arr stores N elements.
+Indexes in an array are in the range of 0 to N-1, where the first element is present at 0-th index and consecutive elements are placed at consecutive indexes.
+Element present at ith index in the array arr[] can be accessed as arr[i].
+
+Insertion in Arrays-------------------------------------------------------------------------------------------------------------------------
+Given an array of a given size. The task is to insert a new element in this array. There are two possible ways of inserting elements in an array:
+Insert elements at the end of the array.
+Insert element at any given index in the array.
+
+Special Case: A special case is needed to be considered is that whether the array is already full or not. If the array is full, then the new element can not be inserted.
+
+Deletion in Arrays---------------------------------------------------------------------------------------------------------------------------
+To delete a given element from an array, we will have to first search the element in the array. If the element is present in the array then delete operation is performed for the element otherwise the user is notified that the array does not contains the given element.
+
+Consider the given array is arr[] and the initial size of the array is N, that is the array can contain a maximum of N elements and the length of the array is len. That is, there are len number of elements already present in this array.
+
+Deleting an element K from the array arr[]: Search the element K in the array arr[] to find the index at which it is present.
+for(i = 0; i < N; i++)
+{
+    if(arr[i] == K)
+        idx = i; return;
+    else
+        Element not Found;
+}
+Now, to delete the element present at index idx, left shift all of the elements present after idx by one place and finally reduce the length of the array by 1.
+for(i = idx+1; i < len; i++)
+{
+    arr[i-1] = arr[i];
+}
+
+len = len-1;
+
+Time Complexity in worst case of this insertion operation can be linear i.e. O(N) as we might have to shift all of the elements by one place to the left.
+
+
+
+ARRAY ROTATION--------------------------------------------------------------------------------------------------------------------------------
+Visually, the process of counter clock-wise array rotation(rotated by say K elements) looks like:
+Shift all elements after K-th element to the left by K positions.
+Fill the K blank spaces at the end of the array by first K elements from the original array.
+
+Note: The similar approach can also be applied for clockwise array rotation.
+
+
+
+Implementation of array rotation--------------------------------
+Simple Method: The simplest way to rotate an array is to implement the above visually observed approach by using extra space.
+Store the first K elements in a temporary array say temp[].
+Shift all elements after K-th element to the left by K positions in the original array.
+Fill the K blank spaces at the end of the original array by the K elements from the temp array.
+Say, arr[] = [1, 2, 3, 4, 5, 6, 7], K = 2
+1) Store first K elements in a temp array
+   temp[] = [1, 2]
+2) Shift rest of the arr[]
+   arr[] = [3, 4, 5, 6, 7, 6, 7]
+3) Store back the K elements from temp
+   arr[] = [3, 4, 5, 6, 7, 1, 2]
+
+Time Complexity: O(N), where N is the number of elements in the array.
+Auxiliary Space: O(K) where K is the number of places by which elements will be rotated.
+
+Another Method (Without extra space): -------------------------------------
+We can also rotate an array by avoiding the use of temporary array. The idea is to rotate the array one by one K times.
+leftRotate(arr[], d, n)
+start
+  For i = 0 to i < d
+    Left rotate all elements of arr[] by one
+end
+
+To rotate an array by 1 position to the left:
+Store the first element in a temporary variable say temp.
+Left shift all elements after the first element by 1 position. That is, move arr[1] to arr[0], arr[2] to arr[1] and so on.
+Initialize arr[N-1] with temp.
+
+To rotate an array by K position to the left, repeat the above process K times.
+Take the same example,
+arr[] = [1, 2, 3, 4, 5, 6, 7], K = 2
+
+Rotate arr[] one by one 2 times.
+
+After 1st rotation: [2, 3, 4, 5, 6, 7, 1]
+After 2nd rotation: [ 3, 4, 5, 6, 7, 1, 2]
+Time Complexity: O(N*K), where N is the number of elements in the array and K is the number of places by which elements will be rotated.
+Auxiliary Space: O(1).
+
+
+
+
+
+
+
+
 
