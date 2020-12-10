@@ -26,4 +26,5 @@ FUNDAMENTALS
 Day-3
 
 * Simple Input https://hack.codingblocks.com/app/practice/3/206
+* ARRAY Rotation, Juggling algorithm.
 
