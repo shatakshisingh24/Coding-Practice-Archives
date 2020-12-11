@@ -28,3 +28,10 @@ Day-3
 * Simple Input https://hack.codingblocks.com/app/practice/3/206
 * ARRAY Rotation, Juggling algorithm.
 
+Day-4 
+* Juggling algorthm 
+* Reversing Arrays
+* Sliding Window Technique
+* Prefix Sum array
+* STL in C++: Vectors and Lists
+
