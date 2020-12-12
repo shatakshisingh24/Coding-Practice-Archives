@@ -35,3 +35,8 @@ Day-4
 * Prefix Sum array
 * STL in C++: Vectors and Lists
 
+Day-5
+* Problems on Arrays
+1. Remove duplcate elements from sorted array: https://practice.geeksforgeeks.org/problems/remove-duplicate-elements-from-sorted-array/1/?track=dsa-workshop-1-arrays&batchId=308
+
+
