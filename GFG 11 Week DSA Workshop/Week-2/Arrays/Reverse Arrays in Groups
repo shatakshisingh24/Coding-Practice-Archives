@@ -1,0 +1,10 @@
+class Solution:	
+	def reverseInGroups(self, A, N, K):
+		# code here
+		W = A[:((N//K)*K)]
+		
+        for i in range(0,len(W),K):
+            W[i:i+K] = W[i:i+K][::-1]
+            for j in A[((N//K)*K):][::-1]:
+                W.append(j)
+                return W
