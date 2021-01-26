@@ -36,8 +36,10 @@ Day-4
 * STL in C++: Vectors and Lists
 
 Day-5
-* Problems on Arrays
-1. Remove duplcate elements from sorted array: https://practice.geeksforgeeks.org/problems/remove-duplicate-elements-from-sorted-array/1/?track=dsa-workshop-1-arrays&batchId=308
+>Problems on Arrays
+* Remove duplicate elements from sorted array: https://practice.geeksforgeeks.org/problems/remove-duplicate-elements-from-sorted-array/1/?track=dsa-workshop-1-arrays&batchId=308
+* Rotate Array by n elements: https://practice.geeksforgeeks.org/problems/rotate-array-by-n-elements-1587115621/1/?track=dsa-workshop-1-arrays&batchId=308
+
 
 Day-5 
 * Searching and Sorting Problems 
