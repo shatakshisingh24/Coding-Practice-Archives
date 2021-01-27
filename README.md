@@ -43,6 +43,9 @@ Day-5
 
 Day-5 
 * Searching and Sorting Problems 
+* Linear search [O(n)]
+* Binary Search Recursive and Iterative [O(log(n))]
+* Ternary Search [O(Log3N)] (base 3, not 3N)
 
 
 
