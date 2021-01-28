@@ -1,0 +1,25 @@
+Problem-https://leetcode.com/problems/find-the-highest-altitude/submissions/
+
+class Solution {
+public:
+    int largestAltitude(vector<int>& gain)
+    {
+        vector<int> prefixsum;
+        prefixsum.push_back(0);
+        int l=gain.size();
+        int max=prefixsum[0];
+        
+        for (int i=0;i<l;i++){
+            printf("%d  ",prefixsum[i]+gain[i]);
+            prefixsum.push_back(prefixsum[i]+gain[i]);}
+        
+        
+        for(int j=0;j<=l;j++){
+            
+            if(prefixsum[j]>max)
+                max=prefixsum[j];
+        }
+        
+    return max ;
+    }
+};
