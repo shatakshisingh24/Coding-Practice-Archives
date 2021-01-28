@@ -40,7 +40,7 @@ Day-5
 >Problems on Arrays
 * Remove duplicate elements from sorted array: https://practice.geeksforgeeks.org/problems/remove-duplicate-elements-from-sorted-array/1/?track=dsa-workshop-1-arrays&batchId=308
 * Rotate Array by n elements: https://practice.geeksforgeeks.org/problems/rotate-array-by-n-elements-1587115621/1/?track=dsa-workshop-1-arrays&batchId=308
-* ![Find the Largest element](https://leetcode.com/problems/find-the-highest-altitude/submissions/) - Easy
+*  ![Find the Largest element](https://leetcode.com/problems/find-the-highest-altitude/submissions/) - Easy
 
 
 Day-5 
