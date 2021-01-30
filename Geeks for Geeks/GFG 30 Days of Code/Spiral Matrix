@@ -1,0 +1,75 @@
+class Solution{
+
+	public:
+	int findK(vector<vector<int>> &a, int n, int m, int k)
+    {
+        // Your code goes here
+        int T,B,R,L, DIR;
+        
+        T=0;
+        B=n-1;
+        R=m-1;
+        L=0;
+        DIR=0;
+        int i;
+        
+        int count=0;
+        
+        while(T<=B && L<=R)
+        {
+            if(DIR==0)
+            {
+                for(i=L;i<R;i++)
+                {count++;
+                
+                if(count==k)
+                     return a[T][i];
+                     
+                    
+                }T++;
+            }
+            
+            else if(DIR==1)
+            {
+                for(i=T;i<B;i++)
+                {
+                    count++;
+                    if(count==k)
+                      return a[T][i];
+                      
+                    
+                }R--;
+            }
+            
+            else if(DIR==2)
+            {
+                for(i=R;i>L;i--)
+                {
+                    count++;
+                    if(count==k)
+                      return a[B][i];
+                      break;
+                }B--;
+            }
+            
+            
+            else if(DIR==3)
+            {
+                for(i=B;i>T;i--)
+                {
+                    count++;
+                    if(count==k)
+                      return a[B][i];
+                      break;
+                }R--;
+            }
+            
+            DIR=(DIR+1)%4;
+            
+            
+        }
+        return count;
+        
+    }
+
+};
