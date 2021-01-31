@@ -1,0 +1,2 @@
+In Geekland there is a grid of coins of size N x N. You have to find the maximum sum of coins in any sub-grid of size K x K.
+Note: Coins of the negative denomination are also possible at Geekland.
