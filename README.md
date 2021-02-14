@@ -49,5 +49,7 @@ Day-5
 * Binary Search Recursive and Iterative [O(log(n))]
 * Ternary Search [O(Log3N)] (base 3, not 3N)
 
+Day-6
+* Leetcode- 1512 ![Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/) - Arrays/Mathematics
 
 
