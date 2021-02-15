@@ -54,5 +54,4 @@ Day-6
 * Leetcode- 1281 [Subtract the Product and Sum of Digits of an Integer](https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/)
 * Leetcode- 728  [Self Dividing Numbers](https://leetcode.com/problems/self-dividing-numbers/)
 * Leetcode- 1413 [Kids with greatest number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/submissions/)
-
-
+* Leetcode- 1716 [Calculate Money in Leetcode Bank](https://leetcode.com/problems/calculate-money-in-leetcode-bank/)
