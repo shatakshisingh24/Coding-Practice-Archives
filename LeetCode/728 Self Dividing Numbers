@@ -1,0 +1,39 @@
+PROBLEM- https://leetcode.com/problems/self-dividing-numbers/
+
+
+class Solution {
+public:
+    vector<int> selfDividingNumbers(int left, int right) {
+        int num, dig;
+        vector<int> result;
+        
+        for(int i=left;i<=right;i++)
+        {
+            num=i;
+            int foo=-1;
+            
+            while(num>0)
+            {
+                dig=num%10;
+                if(dig==0)
+                {
+                    foo=1; 
+                    break;
+                }
+                
+                if (i%dig!=0)
+                {
+                    foo=1;
+                }
+                
+                num=num/10;
+            }
+            
+            if (foo==-1)
+            {
+                result.push_back(i);
+            }
+        }
+       return result; 
+    }
+};
