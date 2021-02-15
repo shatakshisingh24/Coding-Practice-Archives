@@ -52,5 +52,6 @@ Day-5
 Day-6
 * Leetcode- 1512 [Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/) - Arrays/Mathematics
 * Leetcode- 1281 [Subtract the Product and Sum of Digits of an Integer](https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/)
+* Leetcode- 728  [Self Dividing Numbers](https://leetcode.com/problems/self-dividing-numbers/)
 
 
