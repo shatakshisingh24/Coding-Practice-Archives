@@ -1,0 +1,24 @@
+class Solution {
+public:
+    int totalMoney(int n) {
+        int foo=0, sum=0;
+        
+        for(int i=1;i<=n;i++)
+        {
+            
+            sum=sum+i%7+foo;
+                                   
+            if(i%7==0)
+            {
+                sum=sum+7;
+                foo=foo+1;
+                            
+            }
+            
+            printf("%d ",sum);
+        }
+        
+        return sum;
+        
+    }
+};
