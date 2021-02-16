@@ -60,3 +60,4 @@ Day-7
 * Leetcode- 1025 [Divisor Game](https://leetcode.com/problems/divisor-game/)
 * Leetcode- 258 [Add Digits](https://leetcode.com/problems/add-digits/)
 * Leetcode- 1103 [Distribute Candies to People](https://leetcode.com/problems/distribute-candies-to-people/)
+* Leetcode- 9 [Palindrome number](https://leetcode.com/problems/palindrome-number/)
