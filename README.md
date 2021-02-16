@@ -58,4 +58,5 @@ Day-6
 
 Day-7
 * Leetcode- 1025 [Divisor Game](https://leetcode.com/problems/divisor-game/)
-* lEETCODE- 258 [Add Digits](https://leetcode.com/problems/add-digits/)
+* Leetcode- 258 [Add Digits](https://leetcode.com/problems/add-digits/)
+* Leetcode- 1103 [Distribute Candies to People](https://leetcode.com/problems/distribute-candies-to-people/)
