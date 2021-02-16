@@ -58,3 +58,4 @@ Day-6
 
 Day-7
 * Leetcode- 1025 [Divisor Game](https://leetcode.com/problems/divisor-game/)
+* lEETCODE- 258 [Add Digits](https://leetcode.com/problems/add-digits/)
