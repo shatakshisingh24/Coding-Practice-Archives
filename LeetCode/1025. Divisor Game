@@ -1,0 +1,15 @@
+PROBLEM- https://leetcode.com/problems/divisor-game/
+
+class Solution {
+public:
+    bool divisorGame(int N) 
+    {
+        if(N%2==0)
+        {
+            return 1;
+        }
+        
+        else
+            return 0;
+    }
+};
