@@ -55,3 +55,6 @@ Day-6
 * Leetcode- 728  [Self Dividing Numbers](https://leetcode.com/problems/self-dividing-numbers/)
 * Leetcode- 1413 [Kids with greatest number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/submissions/)
 * Leetcode- 1716 [Calculate Money in Leetcode Bank](https://leetcode.com/problems/calculate-money-in-leetcode-bank/)
+
+Day-7
+* Leetcode- 1025 [Divisor Game](https://leetcode.com/problems/divisor-game/)
