@@ -61,3 +61,7 @@ Day-7
 * Leetcode- 258 [Add Digits](https://leetcode.com/problems/add-digits/)
 * Leetcode- 1103 [Distribute Candies to People](https://leetcode.com/problems/distribute-candies-to-people/)
 * Leetcode- 9 [Palindrome number](https://leetcode.com/problems/palindrome-number/)
+
+Day-8
+* Leetcode- 942 [DI String Match](https://leetcode.com/problems/di-string-match/)
+
