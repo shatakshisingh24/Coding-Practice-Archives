@@ -72,3 +72,6 @@ Day-8
 Day-9
 * Leetcode- 1470 [Shuffle the Array](https://leetcode.com/problems/shuffle-the-array/)
 * Leetcode- 1464 [Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/)
+* Leetcode- 1672 [Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/)
+* Leetcode- 1365 [How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/)
+* Leetcode- 1748 [Sum of Unique Elements](https://leetcode.com/problems/sum-of-unique-elements/)
