@@ -1,0 +1,30 @@
+PROBLEM- 
+
+class Solution {
+public:
+    vector<int> smallerNumbersThanCurrent(vector<int>& nums) {
+        
+        vector<int>ans(105,0);
+        vector<int>ret;
+        int sum=0;
+        
+        int n=nums.size();
+        
+        for(int i=0;i<n;i++)
+        {
+            ans[nums[i]]++;
+        }
+        
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<nums[i];j++)
+            {
+                sum=sum+ans[j];
+            }
+            ret.push_back(sum);
+            sum=0;
+            
+        }
+        return ret;
+    }
+};
