@@ -1,0 +1,24 @@
+PROBLEM-https://leetcode.com/problems/shuffle-the-array/
+
+class Solution {
+public:
+    vector<int> shuffle(vector<int>& nums, int n) {
+        vector<int>ans;
+        int oc=0, hc=n;
+        
+        for(int i=0;i<2*n;i++)
+        {
+            
+            if(i%2==0)
+            {
+                ans.push_back(nums[oc++]);
+            }
+            else
+            {
+                ans.push_back(nums[hc++]);
+            }
+                
+        }
+        return ans;
+    }
+};
