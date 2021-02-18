@@ -68,3 +68,7 @@ Day-8
 * Leetcode- [868. Binary Gap](https://leetcode.com/problems/binary-gap/)
 * Leetcode- 976 [Largest Perimeter Triangle](https://leetcode.com/problems/largest-perimeter-triangle/)
 * Leetcode- 1480 [Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/submissions/)
+
+Day-9
+* Leetcode- 1470 [Shuffle the Array](https://leetcode.com/problems/shuffle-the-array/)
+* Leetcode- 1464 [Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/)
