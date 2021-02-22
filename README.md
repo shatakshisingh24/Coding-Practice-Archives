@@ -78,3 +78,5 @@ Day-9
 
 Day-10
 * Leetcode- 326  [Power of Three](https://leetcode.com/problems/power-of-three/)
+* Leetcode- 342  [Power of Four](https://leetcode.com/problems/power-of-four/)
+* Leetcode- 231  [Power of Two](https://leetcode.com/problems/power-of-two/)
