@@ -75,3 +75,6 @@ Day-9
 * Leetcode- 1672 [Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth/)
 * Leetcode- 1365 [How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/)
 * Leetcode- 1748 [Sum of Unique Elements](https://leetcode.com/problems/sum-of-unique-elements/)
+
+Day-10
+* Leetcode- 326  [Power of Three](https://leetcode.com/problems/power-of-three/)
