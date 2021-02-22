@@ -1,0 +1,8 @@
+PROBLEM- https://leetcode.com/problems/sqrtx/
+
+class Solution {
+public:
+    double myPow(double x, int n) {
+        
+    }
+};
