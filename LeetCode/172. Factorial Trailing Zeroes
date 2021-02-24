@@ -1,0 +1,17 @@
+  PROBLEM-https://leetcode.com/problems/factorial-trailing-zeroes/
+  
+  
+  class Solution {
+public:
+    int trailingZeroes(int n) {
+        int res=0;
+        int mul=5;
+        while(n/mul>=1)
+        {
+            res+= ceil(n/mul);
+            mul=mul*5;
+        }
+        return res;         
+                
+    }
+};
