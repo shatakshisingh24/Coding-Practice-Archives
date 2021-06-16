@@ -1,0 +1,29 @@
+Two Sum- https://leetcode.com/problems/two-sum/
+
+class Solution {
+public:
+    vector<int>twoSum(vector<int>& nums, int target) {
+        
+        vector<int> r;
+       
+        
+        map<int,int> um;
+        for(int i=0;i<nums.size();i++)
+        {
+            int com= target-nums[i];
+            if(um.find(com) != um.end())
+            {
+                auto x= um.find(com);
+                r.push_back(x->second);
+                r.push_back(i);
+                return r;
+                
+            }
+            
+            um.insert(make_pair(nums[i],i));
+               
+        
+        }   
+         return r; 
+    }
+};
