@@ -33,6 +33,9 @@ Day-4
 * Juggling algorithm 
 * Reversing Arrays
 * Sliding Window Technique
+
+
+## Not Updating here any
 * Prefix Sum array
 * STL in C++: Vectors and Lists
 
@@ -80,3 +83,7 @@ Day-10
 * Leetcode- 326  [Power of Three](https://leetcode.com/problems/power-of-three/)
 * Leetcode- 342  [Power of Four](https://leetcode.com/problems/power-of-four/)
 * Leetcode- 231  [Power of Two](https://leetcode.com/problems/power-of-two/)
+
+
+Day- 11
+* Leetcode- 1  [Two Sum](https://leetcode.com/problems/two-sum/)
