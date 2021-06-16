@@ -33,9 +33,6 @@ Day-4
 * Juggling algorithm 
 * Reversing Arrays
 * Sliding Window Technique
-
-
-## Not Updating here any
 * Prefix Sum array
 * STL in C++: Vectors and Lists
 
