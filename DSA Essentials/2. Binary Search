@@ -1,0 +1,48 @@
+
+//Binary Search
+#include <iostream>
+using namespace std;
+
+int binary_search(int arr[], int size, int key){
+	int s=0, e=size-1;
+	int mid;
+
+	while(s<e){
+		mid= e-(s+e)/2;
+
+		if(arr[mid]==key){
+			return mid;
+		}
+
+		else if(arr[mid]>key){
+			e=mid-1;
+		}
+
+		else{
+			s=mid+1;
+		}
+
+	}
+    return -1;
+	
+}
+
+int main() {
+	int size;
+	cout<<"Enter the size:";
+	cin>>size;
+
+	int arr[size]={0};
+    for(int i=0;i<size; i++){
+		cin>>arr[i];
+	}
+
+     //Input key
+	int key;
+	cout<<"Enter the key value:";
+	cin>>key;
+
+	cout<<endl<<"Output:"<<binary_search(arr,size, key);
+	return 0;
+}
+
