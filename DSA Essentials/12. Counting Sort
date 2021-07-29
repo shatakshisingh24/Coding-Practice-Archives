@@ -1,0 +1,47 @@
+//Counting Sort
+#include <iostream>
+#include <vector>
+using namespace std;
+
+void countingsort(int arr[], int n){
+	int largest=arr[0];
+
+	for(int i=1; i<n;i++){
+		largest=max(largest, arr[i]);
+	}
+
+	vector<int>v(largest+1,0);
+
+	for(int i=0; i<n;i++){
+		v[arr[i]]=v[arr[i]]+1;
+	}
+    int k=0;
+	for(int i=0; i<v.size(); i++){
+		int c=v[i];
+		while(c){
+			arr[k]=i;
+			k++;			
+			c--;
+		}
+	}
+
+}
+
+int main() {
+	// your code goes here
+	int size;
+	cin>>size;
+
+	int arr[size];
+
+	for(int i=0;i<size; i++){
+		cin>>arr[i];
+	}
+
+	countingsort(arr,size);
+	for(int i=0; i<size; i++){
+		cout<<arr[i]<<" ";
+	}
+	return 0;
+}
+
