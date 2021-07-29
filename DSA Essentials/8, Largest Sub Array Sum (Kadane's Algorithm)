@@ -1,0 +1,36 @@
+//Largeat array Sum using kadane's algorithm
+#include <iostream>
+using namespace std;
+
+int largestsum(int arr[], int size){
+	int cs=0; //cs= ccurrent sum
+	int max_so_far=0;
+
+	for(int i=0; i<size; i++){
+		cs=cs+arr[i];
+
+		if(cs<0){
+			cs=0;
+		}
+
+		max_so_far= max(cs, max_so_far);
+	}
+
+	return max_so_far;
+}
+
+int main() {
+	// your code goes here
+	int size;
+	cin>>size;
+    
+	int arr[size];
+
+	for(int i=0; i<size; i++){
+		cin>>arr[i];
+	}
+
+     cout<<"Largest Sub Array sum is:"<<largestsum(arr, size);
+	return 0;
+}
+
