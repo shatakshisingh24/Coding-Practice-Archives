@@ -1,0 +1,40 @@
+//Largeat array Sum using prefix sum
+#include <iostream>
+using namespace std;
+
+int largestsum(int arr[], int size){
+	int prefix[100];
+
+	prefix[0]=arr[0];
+
+	for(int i=1; i<size; i++){
+		prefix[i]= arr[i]+prefix[i-1];
+	}
+
+	int sum, largest=arr[0];
+
+	for(int i=0; i<size; i++){
+		for(int j=i;j<size; j++){
+			sum= i>0? prefix[j]-prefix[i-1]:prefix[j];
+			largest=max(sum, largest);
+		}
+	}
+
+	return largest;
+}
+
+int main() {
+	// your code goes here
+	int size;
+	cin>>size;
+    
+	int arr[size];
+
+	for(int i=0; i<size; i++){
+		cin>>arr[i];
+	}
+
+     cout<<"Largest Sub Array sum is:"<<largestsum(arr, size);
+	return 0;
+}
+
