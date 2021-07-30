@@ -1,0 +1,48 @@
+// Spiral Print 2D Array
+#include <iostream>
+using namespace std;
+
+void spiralprint(int arr[][10], int r, int c){
+	int startrow=0;
+	int endrow=r-1;
+	int startcolumn=0;
+	int endcolumn=c-1;
+
+  while(startrow<=endrow && startcolumn<=endcolumn) {
+		//print start row
+		for(int j=startcolumn; j<=endcolumn; j++){
+			cout<<arr[startrow][j]<<" ";
+		}
+
+		//print end column
+		for(int i=startrow+1; i<=endrow;i++){
+			cout<<arr[i][endcolumn]<<" ";
+		}
+
+		//print endrow
+		for(int i=endcolumn -1; i>=startcolumn;i--){
+			if(startrow==endrow) break;
+			cout<<arr[endrow][i]<<" ";
+		}
+
+		//print start column
+		for(int j=endrow-1;j>=startrow+1; j--){
+			if(startcolumn==endcolumn) break;
+			cout<<arr[j][startcolumn]<<" ";
+		}
+
+		//move to inner loop
+		startrow ++;
+		endcolumn --;
+		startcolumn ++;
+		endrow --;
+  }
+
+}
+
+int main() {
+	int arr[][10]= {{1,2,3,4}, {5,6,7,8}, {9,10,11,12}};
+	spiralprint(arr,3,4);	
+	return 0;
+}
+
