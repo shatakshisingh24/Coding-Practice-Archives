@@ -1,0 +1,143 @@
+//Linked List Implementation
+#include <iostream>
+using namespace std;
+
+class List;
+
+class Node{
+    int data;
+    public:
+    Node *next;
+    Node(int d): data(d),next(NULL){}
+
+    int getdata(){
+        return data;
+    }
+
+    friend class List;
+};
+
+class List{
+    int helper(Node *start, int key){
+        //base case
+        if(start==NULL){
+            return -1;
+        }
+
+        if()
+
+
+    }
+    public:
+    Node *head;
+    Node *tail;
+    List():head(NULL), tail(NULL){}
+
+    Node * begin(){
+        return head;
+    }
+
+    void push_front(int data){
+        if(head==NULL){
+            Node *n= new Node(data);
+            head = tail= n;
+            return;
+        }
+
+        else{
+            Node *n= new Node(data);
+            n->next=head;
+            head=n;
+        }
+    }
+
+    void push_back(int data){
+        if(head==NULL){
+            Node *n= new Node(data);
+            head= tail=n;
+        }
+
+        else{
+            Node *n= new Node(data);
+            tail->next= n;
+            tail=n;
+        }
+    }
+
+    void insert(int data, int pos){
+        if(pos==0){
+            push_front(data);
+            return;
+        }
+        //otherwise
+        Node *temp=head;
+        for(int i=1; i<=pos-1; i++){
+            temp=temp->next;
+        }
+
+        Node *n= new Node(data);
+        n->next= temp->next;
+        temp->next= n;
+    }
+
+    //Linear Search on LL
+    bool search( int key){
+        Node * temp= head;
+        while(temp!=NULL){
+            if(temp->data==key){
+                return true;
+            }
+            temp=temp->next;
+        }
+        return false;
+    }
+
+    //recursive search
+    bool searchrecursive(Node *h, int key){
+        if(h==NULL){
+            return false;
+        }
+
+        if(h->data==key){
+            return true;
+        }
+
+        else{
+            return searchrecursive(h->next, key);
+        }
+    }
+
+    int recursivesearch(int key){
+        int index=helper(head,key);
+        return index;
+    }
+
+};
+
+int main() {
+	// your code goes here
+    List l;
+    l.push_front(2);
+    l.push_back(4);
+    l.push_front(1);
+    l.insert(3,2);
+
+    Node * head= l.begin();
+   
+
+    if(l.searchrecursive(head,5)){
+        cout<<"Found"<<endl;
+    }
+
+    else{
+        cout<<"Not Found"<<endl;
+    }
+
+     while(head!=NULL){
+        cout<<head->getdata()<<"->";
+        head=head->next;
+    }
+
+	return 0;
+}
+
