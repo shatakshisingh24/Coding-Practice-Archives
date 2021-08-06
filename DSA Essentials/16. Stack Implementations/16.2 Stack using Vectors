@@ -1,0 +1,53 @@
+//Stack using Vectors
+#include<vector>
+#include <iostream>
+using namespace std;
+
+template<typename T>
+class Stack{
+    vector<T> arr;
+
+    public:
+    void push(T data){
+        arr.push_back(data);
+    }
+
+    void pop(){
+        arr.pop_back();
+    }
+
+    T top(){
+        int lastindex=arr.size()-1;
+        return arr[lastindex];
+    }
+
+    bool isempty(){
+        return (arr.size()==0);
+    }
+};
+
+int main() {
+	// your code goes here
+    Stack<int> s;
+    s.push(1);
+    s.push(2);
+    s.push(3);
+    s.push(4);
+    s.pop();
+
+    while(!s.isempty()){
+        cout<<s.top()<<" ";
+        s.pop();
+    }
+
+    if(s.isempty()){
+        cout<<"Stack is empty";
+    }
+    else{
+        cout<<"Not Empty";
+    }
+
+
+	return 0;
+}
+
