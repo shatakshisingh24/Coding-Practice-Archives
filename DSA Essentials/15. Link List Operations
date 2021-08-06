@@ -14,6 +14,13 @@ class Node{
         return data;
     }
 
+	~Node(){
+		cout<<"destructor_called for "<<data<<endl;
+		if(next!=NULL){
+			delete next;
+		}
+	}
+
     friend class List;
 };
 
@@ -24,7 +31,15 @@ class List{
             return -1;
         }
 
-        if()
+        if(start->data==key){
+			return 0;
+		}
+
+		int subind= helper(start->next,key);
+		if(subind==-1){
+			return -1;
+		}
+		return subind+1;
 
 
     }
@@ -112,6 +127,55 @@ class List{
         return index;
     }
 
+	void pop_front(){
+		Node * temp= head;
+		head=head->next;
+		temp->next=NULL;
+		delete temp;
+	}
+
+	void pop_back(){
+		if(head==NULL){
+			return;
+		}
+        
+		Node *temp=head;        
+		while(temp->next->next!=NULL){
+            temp=temp->next;
+		}
+
+        temp->next=NULL;
+        delete tail;
+		tail=temp;
+	}
+
+	void remove(int pos){
+        Node *temp=head;
+        if(pos==1){
+            pop_front();
+        }
+
+        else{
+            for(int i=1; i<pos; i++){
+                temp=temp->next;
+            }
+            Node *n= temp->next;
+            temp->next= temp->next->next;
+            n->next= NULL;
+            delete(n);
+        }
+		
+	}
+
+	//Destructor
+	~List(){
+		//One way is to visit each node and delete
+		if(head!=NULL){
+			delete head;
+			head=NULL;
+		}
+	}
+
 };
 
 int main() {
@@ -121,11 +185,13 @@ int main() {
     l.push_back(4);
     l.push_front(1);
     l.insert(3,2);
+	l.pop_front();
+	l.pop_back();
 
     Node * head= l.begin();
    
-
-    if(l.searchrecursive(head,5)){
+   //Searchp
+    if(l.searchrecursive(head,4)){
         cout<<"Found"<<endl;
     }
 
@@ -137,7 +203,6 @@ int main() {
         cout<<head->getdata()<<"->";
         head=head->next;
     }
-
 	return 0;
 }
 
