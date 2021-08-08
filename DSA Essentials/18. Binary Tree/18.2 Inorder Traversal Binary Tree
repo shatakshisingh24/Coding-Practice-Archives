@@ -1,0 +1,53 @@
+//inorder traversal of binary tree
+//INPUT- 1 2 4 -1 -1 5 7 -1 -1 -1 3 -1 6 -1 -1
+//OUTPUT 4,2,7,5,1,3,6
+#include <iostream>
+using namespace std;
+
+class Node{
+
+public:
+    int data;
+    Node *left;
+    Node *right;
+
+    Node(int d){
+        data=d;
+        left=right=NULL;
+    }
+};
+
+//We can define a tree class or use a functional approach
+//here we will use functional approach
+
+//PRE ORDER BUILD OF TREE
+Node * buildtree(){
+    int d;
+    cin>>d;
+
+    if(d==-1){
+        return NULL;
+    }
+
+    Node* n= new Node(d);
+    n->left= buildtree();
+    n->right= buildtree();
+    return n;
+}
+
+void printinorder(Node *root){
+    if(root==NULL){
+        return;
+    }
+
+    printinorder(root->left);
+    cout<<root->data<<" ";
+    printinorder(root->right);
+}
+
+int main() {
+	// your code goes here
+    Node * root= buildtree();
+    printinorder(root);
+	return 0;
+}
