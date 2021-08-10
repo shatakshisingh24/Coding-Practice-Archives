@@ -1,0 +1,34 @@
+//Priority Queue STL
+#include<queue>
+#include <iostream>
+using namespace std;
+
+int main() {
+	int arr[]={10,15,20,13,6,90};
+    int n= sizeof(arr)/sizeof(int);
+
+    //by default max heap is formed
+    priority_queue<int> heap;
+    for(int x:arr){
+        heap.push(x);
+    }
+
+    //min heap
+    priority_queue<int,vector<int>, greater<int>>heap_min;
+    for(int x:arr){
+        heap_min.push(x);
+    }
+    
+    while(!heap.empty()){
+        cout<<heap.top()<<endl;
+        heap.pop();
+    }
+    cout<<endl;
+
+    while(!heap_min.empty()){
+        cout<<heap_min.top()<<endl;
+        heap_min.pop();
+    }
+	return 0;
+}
+
