@@ -1,0 +1,92 @@
+//Implementation of Heap
+//Insertion
+#include <iostream>
+#include<vector>
+
+using namespace std;
+
+class Heap{
+
+    vector<int> v; //store data in this vector; can be accessed by methods only
+
+    void heapify(int i){
+        int left=2*i;
+        int right= 2*i+1;
+
+        int min_ind= i;
+
+        if(left<v.size() and v[left]<v[i]){
+            min_ind= left;
+        }
+
+        if(right<v.size() and v[right]<v[min_ind]){
+            min_ind= right;
+        }
+
+        if(min_ind!=i){
+            swap(v[i], v[min_ind]);
+            heapify(min_ind);
+        }
+
+    }
+public:
+    Heap(int default_size=10){
+        v.reserve(default_size+1);
+        v.push_back(-1); //we will not use 0th index for simplicity
+    }
+
+    void push(int data){
+        //add data to end of the heap
+        v.push_back(data);
+
+        //Now we will place it at right position
+        int idx= v.size()-1; //last index where we inserted element
+        int parent= idx/2;
+
+        while(idx>1 and v[idx]<v[parent]){
+            swap(v[idx], v[parent]);
+            idx=parent;
+            parent=parent/2;
+        }
+
+    }
+
+    //isempty
+    bool isempty(){
+        return v.size()==1;
+    }
+
+    //Getmin()
+    int top(){
+        return v[1];
+    }
+
+    //Remove min element
+    void pop(){
+        //1. swap last and first
+        int idx= v.size()-1;        
+        swap(v[1],v[idx]);
+        //2. remove last element
+        v.pop_back();
+        heapify(1); //recursive and private
+        
+    }
+};
+
+int main() {
+	// your code goes here
+    Heap h(10);
+    h.push(2);
+    h.push(19);
+    h.push(9);
+    h.push(1);
+
+    while(!h.isempty()){
+        int t= h.top();
+        cout<<t<<" ";
+        h.pop();
+    }
+
+	return 0;
+}
+
