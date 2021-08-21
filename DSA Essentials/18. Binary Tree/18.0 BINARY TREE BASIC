@@ -162,6 +162,23 @@ HDpair optimiseddiameter(node *root){
 }
 
 
+//REPLACE ALL NODES WITH SUM OF DECENDENTS
+int replacewithsum(node* root){
+    //basecase
+    if(root==NULL){
+        return 0;
+    }
+
+    if(root->left==NULL && root->right==NULL){
+        return root->data;
+    }
+
+    int temp= root->data;
+    int LS= replacewithsum(root->left);
+    int RS= replacewithsum(root->right);
+    root->data=LS+RS;
+    return root->data+temp; 
+}
 
 
 
@@ -178,6 +195,8 @@ int main() {
     cout<<"DIAMETER:"<<finddiameter(levelorderbuildroot)<<endl;
     cout<<"Optimised Diameter"<< optimiseddiameter(levelorderbuildroot).diameter<<endl;
 
+    replacewithsum(levelorderbuildroot);
+    levelorderprint(levelorderbuildroot);
 
 	return 0;
 }
