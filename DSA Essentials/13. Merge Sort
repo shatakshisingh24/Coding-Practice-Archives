@@ -25,7 +25,7 @@ void merge(vector<int>&arr, int s,int e){
     }
 
     int k=0;
-    for(int i=s; i<e; i++){
+    for(int i=s; i<=e; i++){
         arr[i]=temp[k++];
     }
 
