@@ -1,0 +1,53 @@
+#include<vector>
+#include<list>
+#include <iostream>
+using namespace std;
+
+
+class Graph{
+	//pointer to a list of array
+
+	int V; //vertices
+	list<int> *l;
+
+public:
+	Graph(int v){
+		V=v;
+		l= new list<int>[V]; //array of link lists so this creates V lin lists
+	}
+
+	void addedge(int i, int j, bool undir=true){
+		l[i].push_back(j);
+
+		if(undir){
+			l[j].push_back(i);
+		}
+	}
+
+	void printgraph(){
+		for(int i=0; i<V; i++){
+			//i- row
+			cout<<i<<"->";
+
+			for(auto x: l[i]){
+				cout<<x<<"-->";
+			}
+			cout<<endl;
+		}
+	}
+
+
+
+
+};
+
+int main() {
+	// your code goes here
+	Graph g(5);
+	g.addedge(1,2);
+	g.addedge(3,4);
+	g.addedge(1,4);
+	g.printgraph();
+	return 0;
+}
+
